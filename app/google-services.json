@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "20767744013",
+    "project_id": "dailyhabits-ea621",
+    "storage_bucket": "dailyhabits-ea621.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:20767744013:android:dd0827bd4cb109f846b544",
+        "android_client_info": {
+          "package_name": "com.example.habitsappcourse"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVXpPXATbGS2Y1ocuOIR83Ht6YHO6M-4M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

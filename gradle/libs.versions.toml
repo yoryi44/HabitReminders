@@ -1,0 +1,140 @@
+[versions]
+agp = "8.5.1"
+coreTestingVersion = "2.2.0"
+hiltAndroidTestingVersion = "2.45"
+junitJupiterApiVersion = "5.8.2"
+junitJupiterEngineVersion = "5.8.2"
+kotlin = "1.9.23"
+coreKtx = "1.13.1"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+kotlinxCoroutinesTestVersion = "1.5.0"
+lifecycleRuntimeKtx = "2.8.3"
+activityCompose = "1.9.0"
+composeBom = "2024.06.00"
+googleGmsGoogleServices = "4.4.2"
+firebaseAnalytics = "22.0.2"
+hiltAndroid = "2.50"
+hiltNavigationVersion = "1.2.0"
+kspVersion = "1.9.23-1.0.19"
+liveData = "2.8.3"
+mockitoAndroid = "2.24.5"
+mockitoCoreVersion = "3.11.2"
+mockitoInlineVersion = "3.11.2"
+mockitoKotlinVersion = "3.2.0"
+mockkVersion = "1.13.4"
+runtimeLiveData = "1.6.8"
+room = "2.6.1"
+navigationRuntimeKtx = "2.7.7"
+nav_version = "2.7.7"
+accompanist_version = "0.28.0"
+firebaseAuthVersion = "23.0.0"
+timePicker = "1.1.0"
+gson = "2.10.1"
+retrofit = "2.9.0"
+okhttp3 = "5.0.0-alpha.10"
+workRuntimeKtxVersion = "2.9.0"
+hiltWorkVersion = "1.2.0"
+hiltAndroidCompiler = "2.50"
+hiltCompiler = "1.2.0"
+workTestingVersion = "2.9.0"
+jetbrainsKotlinJvmVersion = "1.9.23"
+appcompatVersion = "1.7.0"
+materialVersion = "1.12.0"
+
+
+[libraries]
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinxCoroutinesTestVersion" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-core-testing = { module = "androidx.arch.core:core-testing", version.ref = "coreTestingVersion" }
+androidx-work-testing = { module = "androidx.work:work-testing", version.ref = "workTestingVersion" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+firebase-analytics = { group = "com.google.firebase", name = "firebase-analytics", version.ref = "firebaseAnalytics" }
+androidx-navigation-runtime-ktx = { group = "androidx.navigation", name = "navigation-runtime-ktx", version.ref = "navigationRuntimeKtx" }
+firebase-auth = { group = "com.google.firebase", name = "firebase-auth", version.ref = "firebaseAuthVersion" }
+
+#LIVE DATA
+liveData = { module = "androidx.lifecycle:lifecycle-livedata",version.ref = "liveData" }
+mockito-mockito-android = { module = "org.mockito:mockito-android", version.ref = "mockitoAndroid" }
+runtime-livedata = { module = "androidx.compose.runtime:runtime-livedata",version.ref = "runtimeLiveData" }
+
+#DAGGER HILT
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hiltAndroid"}
+hilt-compiler = { module = "androidx.hilt:hilt-compiler",version.ref = "hiltCompiler" }
+hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hiltAndroidCompiler" }
+hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hiltNavigationVersion"}
+
+#ROOM DATABASE
+room-runtime = { module = "androidx.room:room-runtime",version.ref = "room" }
+room-compiler = { module = "androidx.room:room-compiler",version.ref = "room" }
+room-ktx = { module = "androidx.room:room-ktx",version.ref = "room" }
+
+#NAVVIGATION  COMPOSE (NAV HOST)
+nav-host = { module = "androidx.navigation:navigation-compose",version.ref = "nav_version" }
+
+#PAGER
+accompanist-pager = { module = "com.google.accompanist:accompanist-pager",version.ref = "accompanist_version" }
+accompanist-pager-indicators = { module = "com.google.accompanist:accompanist-pager-indicators",version.ref = "accompanist_version" }
+
+#TIME PICKER
+maxkeppeler-core = { group = "com.maxkeppeler.sheets-compose-dialogs", name = "core", version.ref = "timePicker" }
+maxkeppeler-clock = { group = "com.maxkeppeler.sheets-compose-dialogs", name = "clock", version.ref = "timePicker" }
+
+#GSON
+gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
+
+#RETROFIT
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+retrofit-converter-gson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit" }
+
+#INTERCEPTOR
+logging-interceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttp3" }
+
+#PERMISSIONS
+accompanist-permissions = { group = "com.google.accompanist", name = "accompanist-permissions", version.ref = "accompanist_version" }
+
+#WORK MANAGER
+androidx-work-runtime-ktx = { group = "androidx.work", name = "work-runtime-ktx", version.ref = "workRuntimeKtxVersion" }
+androidx-hilt-work = { module = "androidx.hilt:hilt-work", version.ref = "hiltWorkVersion" }
+
+#MOCKITO
+mockito-core = { module = "org.mockito:mockito-core", version.ref = "mockitoCoreVersion" }
+mockito-kotlin = { module = "org.mockito.kotlin:mockito-kotlin", version.ref = "mockitoKotlinVersion" }
+mockito-inline = { module = "org.mockito:mockito-inline", version.ref = "mockitoInlineVersion" }
+mockk = { module = "io.mockk:mockk", version.ref = "mockkVersion" }
+
+
+#CORUTINAS TEST
+kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "kotlinxCoroutinesTestVersion" }
+
+#JUPITER
+junit-jupiter-api = { module = "org.junit.jupiter:junit-jupiter-api", version.ref = "junitJupiterApiVersion" }
+junit-jupiter-engine = { module = "org.junit.jupiter:junit-jupiter-engine", version.ref = "junitJupiterEngineVersion" }
+
+#HILT TEST
+hilt-android-testing = { module = "com.google.dagger:hilt-android-testing", version.ref = "hiltAndroidTestingVersion" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompatVersion" }
+material = { group = "com.google.android.material", name = "material", version.ref = "materialVersion" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+daggerHiltPlugin = { id = "com.google.dagger.hilt.android", version.ref = "hiltAndroid"}
+kspPlugin = { id = "com.google.devtools.ksp", version.ref = "kspVersion" }
+google-gms-google-services = { id = "com.google.gms.google-services", version.ref = "googleGmsGoogleServices" }
+jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "jetbrainsKotlinJvmVersion" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+
